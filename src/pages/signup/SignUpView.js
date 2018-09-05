@@ -87,7 +87,7 @@ const SignUpView = (props) => {
               color="primary"
               className={classes.submit}
             >
-              Sign Up
+              Register
           </Button>
 
           </form>

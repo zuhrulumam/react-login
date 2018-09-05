@@ -40,7 +40,7 @@ class SignUp extends Component {
         // this.props.history.push("/");
       })
       .catch(err => {
-        openSnackbar({ message: "Signup Error" })
+        openSnackbar({ message: "Signup Error", variant: 'error' })
         console.log(err)
       })
 

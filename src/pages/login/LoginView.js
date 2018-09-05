@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import { withStyles } from '@material-ui/core/styles';
 
 import Button from '@material-ui/core/Button';
@@ -47,6 +49,10 @@ const styles = theme => ({
   submit: {
     marginTop: theme.spacing.unit * 3,
   },
+  regButton: {
+    marginTop: theme.spacing.unit * 3,
+    textDecoration: 'none'
+  },
 });
 
 const LoginView = (props) => {
@@ -87,6 +93,9 @@ const LoginView = (props) => {
           </Button>
 
           </form>
+
+          <Link to='/signup' className={classes.regButton}>Or register</Link>
+
         </Paper>
       </main>
     </div>

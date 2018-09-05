@@ -38,7 +38,7 @@ class Login extends Component {
         // this.props.history.push("/");
       })
       .catch(err => {
-        openSnackbar({ message: "Login Error" })
+        openSnackbar({ message: "Login Error", variant: 'error' })
         console.log(err)
       })
 
