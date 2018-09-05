@@ -14,8 +14,14 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"react-scripts start\"",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "server": "cd server && npm run start:dev"
+    "server": "cd server && npm run start:dev",
+    "test": "jest tests/"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "jest": "^23.5.0",
+    "jest-cli": "^23.5.0",
+    "puppeteer": "^1.7.0"
   }
 }

@@ -62,7 +62,7 @@ const LoginView = (props) => {
             {/* <LockIcon /> */}
           </Avatar>
           <Typography variant="headline">Log in</Typography>
-          <form onSubmit={props.onSubmit}>
+          <form onSubmit={props.onSubmit} className="login-form">
             <FormControl margin="normal" required fullWidth>
               <InputLabel htmlFor="email">Email Address</InputLabel>
               <Input id="email" name="email" type="email" autoComplete="email" autoFocus />

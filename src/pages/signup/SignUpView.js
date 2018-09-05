@@ -62,10 +62,14 @@ const SignUpView = (props) => {
             {/* <LockIcon /> */}
           </Avatar>
           <Typography variant="headline">Sign Up</Typography>
-          <form onSubmit={props.onSubmit}>
+          <form onSubmit={props.onSubmit} class="signup-form">
             <FormControl margin="normal" required fullWidth>
               <InputLabel htmlFor="email">Email Address</InputLabel>
               <Input id="email" name="email" type="email" autoComplete="email" autoFocus />
+            </FormControl>
+            <FormControl margin="normal" required fullWidth>
+              <InputLabel htmlFor="username">Username</InputLabel>
+              <Input id="username" name="username" type="text" />
             </FormControl>
             <FormControl margin="normal" required fullWidth>
               <InputLabel htmlFor="password">Password</InputLabel>

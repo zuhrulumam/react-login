@@ -68,7 +68,8 @@ class HomePage extends Component {
     }
 
     return (
-      <div className={classes.root}>
+      <div className={classes.root} data-testid="homepage" id="homepage">
+        {/* <div className="homepage"> */}
         <AppBar position="static">
           <Toolbar>
             <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
@@ -77,7 +78,12 @@ class HomePage extends Component {
             <Typography variant="title" color="inherit" className={classes.flex}>
               Coding Test
           </Typography>
-            <Button variant="contained" color="secondary" onClick={this.handleLogout}>
+            <Button
+              variant="contained"
+              color="secondary"
+              onClick={this.handleLogout}
+              data-testid="signoutBtn"
+            >
               Logout
             </Button>
           </Toolbar>
